@@ -1,0 +1,196 @@
+layout: {zmk_keyboard: cradio}
+layers:
+  Base:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - {t: ':', s: ;}
+  - {t: A, h: Cmd}
+  - {t: R, h: Opt}
+  - {t: S, h: Ctrl}
+  - T
+  - G
+  - M
+  - N
+  - {t: E, h: Ctrl}
+  - {t: I, h: Opt}
+  - {t: O, h: Cmd}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - {t: Tab, h: Nav}
+  - ␣
+  - ⏎
+  - {t: ⌫, h: Sym}
+  Nav:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ⌦
+  - Home
+  - PgDn
+  - PgUp
+  - End
+  - Cmd
+  - Opt
+  - Ctrl
+  - Shift
+  - ''
+  - ''
+  - ←
+  - ↓
+  - ↑
+  - →
+  - Undo
+  - Cut
+  - Copy
+  - Paste
+  - Redo
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Sym:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - _
+  - '='
+  - (
+  - )
+  - '-'
+  - '|'
+  - '"'
+  - '{'
+  - '}'
+  - ''''
+  - +
+  - '*'
+  - '['
+  - ']'
+  - /
+  - '#'
+  - '@'
+  - '!'
+  - '?'
+  - \
+  - '`'
+  - '~'
+  - {t: ▽, type: trans}
+  - {type: held}
+  Fn:
+  - F1
+  - F2
+  - F3
+  - F4
+  - ''
+  - Studio Unlock
+  - ⏮
+  - ⏯
+  - ⏭
+  - Boot
+  - F5
+  - F6
+  - F7
+  - F8
+  - {t: Mouse, h: toggle}
+  - {t: BT, h: '0'}
+  - Vol-
+  - Mute
+  - Vol+
+  - USB/BT
+  - F9
+  - F10
+  - F11
+  - F12
+  - ''
+  - {t: BT, h: '1'}
+  - Bri-
+  - {t: BT, h: '2'}
+  - Bri+
+  - BT Clear
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  Mouse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scr ←
+  - Scr ↓
+  - Scr ↑
+  - Scr →
+  - ''
+  - Middle
+  - Right
+  - Left
+  - {t: Mouse, h: toggle}
+  - ''
+  - ←
+  - ↓
+  - ↑
+  - →
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Left
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Right
+combos:
+- p: [20, 21]
+  k: {t: Shift, h: sticky}
+  l: [Base, Nav, Sym]
+- p: [28, 29]
+  k: {t: Shift, h: sticky}
+  l: [Base, Nav, Sym]
+- p: [1, 2]
+  k: Esc
+  l: [Base]
+- p: [26, 27]
+  k: _
+  l: [Base]
+- p: [21, 22]
+  k: Caps Word
+  l: [Base]
+- p: [7, 8]
+  k: ⌥⌫ word
+  l: [Base]
