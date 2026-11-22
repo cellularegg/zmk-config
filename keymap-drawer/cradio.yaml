@@ -176,10 +176,10 @@ layers:
   - {t: ▽, type: trans}
   - Right
 combos:
-- p: [20, 21]
+- p: [13, 14]
   k: {t: Shift, h: sticky}
   l: [Base, Nav, Sym]
-- p: [28, 29]
+- p: [15, 16]
   k: {t: Shift, h: sticky}
   l: [Base, Nav, Sym]
 - p: [1, 2]
