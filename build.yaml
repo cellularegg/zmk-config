@@ -18,3 +18,11 @@ include:
   # Clears Bluetooth bonds; flash to both halves if they stop pairing.
   - board: nice_nano_v2
     shield: settings_reset
+
+  # Standalone right half with USB serial logging, for debugging Bluetooth/battery.
+  # Read with: screen /dev/tty.usbmodem* 115200
+  - board: nice_nano_v2
+    shield: cradio_right
+    snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_ZMK_SPLIT=n -DCONFIG_ZMK_LOG_LEVEL_DBG=y
+    artifact-name: cradio_right_standalone_logging
