@@ -95,14 +95,14 @@ layers:
   - '*'
   - '['
   - ']'
-  - /
+  - '~'
   - '#'
   - '@'
   - '!'
   - '?'
   - \
+  - {t: ▽, type: trans}
   - '`'
-  - '~'
   - {t: ▽, type: trans}
   - {type: held}
   Fn:
@@ -110,7 +110,7 @@ layers:
   - F2
   - F3
   - F4
-  - ''
+  - Boot
   - Studio Unlock
   - ⏮
   - ⏯
