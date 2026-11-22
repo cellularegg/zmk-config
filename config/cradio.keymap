@@ -79,15 +79,16 @@
     combos {
         compatible = "zmk,combos";
         // Shift: tap = sticky (next key shifted), hold = normal Shift.
+        // Both keys are under the same index finger, so typing rolls can't trigger them.
         combo_shift_left {
             timeout-ms = <30>;
-            key-positions = <20 21>;    // Z + X
+            key-positions = <13 14>;    // T + G
             bindings = <&sk LSHFT>;
             layers = <BASE NAV SYM>;
         };
         combo_shift_right {
             timeout-ms = <30>;
-            key-positions = <28 29>;    // . + /
+            key-positions = <15 16>;    // M + N
             bindings = <&sk RSHFT>;
             layers = <BASE NAV SYM>;
         };
