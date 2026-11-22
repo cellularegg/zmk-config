@@ -11,16 +11,16 @@ The diagram is redrawn by GitHub Actions on every keymap change
 
 ## Using the layers
 
-The two outer thumb keys do double duty: **tap** for the key, **hold** for a layer.
+Thumbs, left to right: **Tab/Nav · Space · Enter/Sym · Backspace**.
+Two of them do double duty: **tap** for the key, **hold** for a layer.
+Space and Backspace are plain keys, so holding Backspace deletes repeatedly.
 
 | Layer | How to get there | How to leave |
 |---|---|---|
 | **Nav** (arrows, Home/End, PgUp/PgDn, Delete, Cmd/Opt/Ctrl/Shift, Undo/Cut/Copy/Paste/Redo) | Hold the left outer thumb (tap = Tab) | Release |
-| **Sym** (numbers, brackets, UK symbols) | Hold the right outer thumb (tap = Backspace) | Release |
-| **Fn** (F1–F12, media, volume, brightness, Bluetooth, bootloader) | Hold **both** outer thumbs, in either order | Release either |
+| **Sym** (numbers, brackets, UK symbols) | Hold the right inner thumb (tap = Enter) | Release |
+| **Fn** (F1–F12, media, volume, brightness, Bluetooth, bootloader) | Hold **both** Nav and Sym, in either order | Release either |
 | **Mouse** (move, scroll, click) | In Fn, tap the **G** position. Stays on (toggle) | Tap the **G** position again |
-
-Tap-then-hold a thumb key repeats its tap (e.g. hold Backspace to delete repeatedly).
 
 Home row mods: hold **A/R/S** (left) or **E/I/O** (right) for Cmd/Opt/Ctrl. They only
 turn into modifiers when the next key is on the other hand, so fast typing stays letters.

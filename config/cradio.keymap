@@ -67,9 +67,9 @@
             bindings = <&kp>, <&kp>;
         };
 
-        // Thumb layer-taps (tap = Tab/Backspace, hold = Nav/Sym). "balanced" so a fast
-        // Nav+arrow resolves as the layer instead of Tab + letter; quick-tap lets
-        // tap-then-hold repeat Backspace.
+        // Thumb layer-taps (tap = Tab/Enter, hold = Nav/Sym). "balanced" so a fast
+        // Nav+arrow resolves as the layer instead of Tab + letter. Backspace is a plain
+        // key on the right outer thumb so holding it repeats.
         lt_th: thumb_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -147,7 +147,7 @@
     &kp Q        &kp W        &kp F         &kp P         &kp B    &kp J   &kp L         &kp U         &kp Y        &coln
     &hml LGUI A  &hml LALT R  &hml LCTRL S  &kp T         &kp G    &kp M    &kp N         &hmr RCTRL E  &hmr LALT I  &hmr RGUI O
     &kp Z        &kp X        &kp C         &kp D         &kp V    &kp K    &kp H         &kp COMMA     &kp DOT      &kp FSLH
-                                            &lt_th NAV TAB &kp SPACE        &kp RET       &lt_th SYM BSPC
+                                            &lt_th NAV TAB &kp SPACE        &lt_th SYM RET &kp BSPC
             >;
         };
 
