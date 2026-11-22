@@ -40,7 +40,7 @@
 
 / {
     behaviors {
-        // Home row mods. Equivalent of the QMK settings:
+        // Home row mods (Cmd/Alt/Ctrl only; Shift is on combos). Equivalent of the QMK settings:
         //   TAPPING_TERM 200, PERMISSIVE_HOLD (balanced), QUICK_TAP_TERM 120,
         //   FLOW_TAP_TERM 150 (require-prior-idle), CHORDAL_HOLD (hold-trigger positions:
         //   only opposite hand + thumbs resolve a hold).
@@ -78,6 +78,19 @@
 
     combos {
         compatible = "zmk,combos";
+        // Shift: tap = sticky (next key shifted), hold = normal Shift.
+        combo_shift_left {
+            timeout-ms = <30>;
+            key-positions = <20 21>;    // Z + X
+            bindings = <&sk LSHFT>;
+            layers = <BASE NAV SYM>;
+        };
+        combo_shift_right {
+            timeout-ms = <30>;
+            key-positions = <28 29>;    // . + /
+            bindings = <&sk RSHFT>;
+            layers = <BASE NAV SYM>;
+        };
         combo_esc {
             timeout-ms = <30>;
             key-positions = <1 2>;      // W + F
@@ -119,7 +132,7 @@
             display-name = "Base";
             bindings = <
     &kp Q        &kp W        &kp F         &kp P         &kp B    &kp J   &kp L         &kp U         &kp Y        &coln
-    &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G    &kp M    &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O
+    &hml LGUI A  &hml LALT R  &hml LCTRL S  &kp T         &kp G    &kp M    &kp N         &hmr RCTRL E  &hmr LALT I  &hmr RGUI O
     &kp Z        &kp X        &kp C         &kp D         &kp V    &kp K    &kp H         &kp COMMA     &kp DOT      &kp FSLH
                                             &lt NAV TAB   &kp SPACE         &kp RET       &lt SYM BSPC
             >;
