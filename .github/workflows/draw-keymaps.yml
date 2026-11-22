@@ -1,0 +1,19 @@
+# Redraws keymap-drawer/cradio.svg whenever the keymap or drawer config changes,
+# and commits it back. Run `git pull` after pushing a keymap change.
+name: Draw keymaps
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'config/*.keymap'
+      - 'keymap_drawer.config.yaml'
+      - '.github/workflows/draw-keymaps.yml'
+
+jobs:
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write
+    with:
+      commit_message: 'Redraw keymap diagram'
+      fail_on_error: true

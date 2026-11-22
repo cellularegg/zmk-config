@@ -1,0 +1,87 @@
+# keymap-drawer config for the Sweep (ZMK). Labels match qmk/keymap-drawer/config.yaml.
+parse_config:
+  zmk_keycode_map:
+    TAB: Tab
+    BSPC: ⌫
+    DEL: ⌦
+    ESC: Esc
+    RET: ⏎
+    SPACE: ␣
+    LCTRL: Ctrl
+    RCTRL: Ctrl
+    LSHFT: Shift
+    RSHFT: Shift
+    LALT: Opt
+    LGUI: Cmd
+    RGUI: Cmd
+    LEFT: ←
+    DOWN: ↓
+    UP: ↑
+    RIGHT: →
+    HOME: Home
+    END: End
+    PG_UP: PgUp
+    PG_DN: PgDn
+    C_PREV: ⏮
+    C_PP: ⏯
+    C_NEXT: ⏭
+    C_VOL_DN: Vol-
+    C_VOL_UP: Vol+
+    C_MUTE: Mute
+    C_BRI_DN: Bri-
+    C_BRI_UP: Bri+
+    # Symbols
+    COLON: ':'
+    SEMI: ;
+    COMMA: ','
+    DOT: .
+    FSLH: /
+    UNDER: _
+    EQUAL: '='
+    MINUS: '-'
+    PLUS: +
+    STAR: '*'
+    LPAR: (
+    RPAR: )
+    LBRC: '{'
+    RBRC: '}'
+    LBKT: '['
+    RBKT: ']'
+    SQT: "'"
+    EXCL: '!'
+    QMARK: '?'
+    GRAVE: '`'
+  raw_binding_map:
+    # macOS "British – PC" symbols (ZMK sends US HID usages)
+    '&kp LS(N2)': '"'
+    '&kp LS(SQT)': '@'
+    '&kp NON_US_HASH': '#'
+    '&kp LS(NON_US_HASH)': '~'
+    '&kp NON_US_BSLH': \
+    '&kp LS(NON_US_BSLH)': '|'
+    # macOS editing
+    '&kp LG(Z)': Undo
+    '&kp LG(X)': Cut
+    '&kp LG(C)': Copy
+    '&kp LG(V)': Paste
+    '&kp LS(LG(Z))': Redo
+    '&kp LA(BSPC)': ⌥⌫ word
+    '&caps_word': Caps Word
+    '&studio_unlock': Studio Unlock
+    '&bootloader': Boot
+    '&out OUT_TOG': USB/BT
+    '&bt BT_CLR': BT Clear
+    '&sk LSHFT': {t: Shift, h: sticky}
+    '&sk RSHFT': {t: Shift, h: sticky}
+    # Mouse
+    '&msc SCRL_LEFT': Scr ←
+    '&msc SCRL_DOWN': Scr ↓
+    '&msc SCRL_UP': Scr ↑
+    '&msc SCRL_RIGHT': Scr →
+    '&mmv MOVE_LEFT': ←
+    '&mmv MOVE_DOWN': ↓
+    '&mmv MOVE_UP': ↑
+    '&mmv MOVE_RIGHT': →
+    '&mkp LCLK': Left
+    '&mkp RCLK': Right
+    '&mkp MCLK': Middle
