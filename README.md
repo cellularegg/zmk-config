@@ -11,14 +11,14 @@ The diagram is redrawn by GitHub Actions on every keymap change
 
 ## Using the layers
 
-Thumbs, left to right: **Tab/Nav · Space · Enter/Sym · Backspace**.
+Thumbs, left to right: **Tab/Nav · Space · Backspace · Enter/Sym**.
 Two of them do double duty: **tap** for the key, **hold** for a layer.
 Space and Backspace are plain keys, so holding Backspace deletes repeatedly.
 
 | Layer | How to get there | How to leave |
 |---|---|---|
 | **Nav** (arrows, Home/End, PgUp/PgDn, Delete, Cmd/Opt/Ctrl/Shift, Undo/Cut/Copy/Paste/Redo) | Hold the left outer thumb (tap = Tab) | Release |
-| **Sym** (numbers, brackets, UK symbols) | Hold the right inner thumb (tap = Enter) | Release |
+| **Sym** (numbers, brackets, UK symbols) | Hold the right outer thumb (tap = Enter) | Release |
 | **Fn** (F1–F12, media, volume, brightness, Bluetooth, bootloader) | Hold **both** Nav and Sym, in either order | Release either |
 | **Mouse** (move, scroll, click) | In Fn, tap the **G** position. Stays on (toggle) | Tap the **G** position again |
 
